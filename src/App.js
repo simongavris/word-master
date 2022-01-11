@@ -134,18 +134,20 @@ function App() {
 
   const isValidWord = (word) => {
     if (word.length < 5) return false
+    console.log("is valid")
     return words[word.toLowerCase()]
   }
 
   const onEnterPress = () => {
+    console.log(answer)
     const word = board[currentRow].join('')
+    console.log(isValidWord(word))
     if (!isValidWord(word)) {
       setSubmittedInvalidWord(true)
       return
     }
 
     if (currentRow === 6) return
-
     updateCellStatuses(word, currentRow)
     updateLetterStatuses(word)
     setCurrentRow((prev) => prev + 1)
