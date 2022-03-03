@@ -1,4 +1,10 @@
-# Word Master
+# Word Master - German
+
+## My Contribution
+
+I changed the word list for a german 5-letter word list, removed the mutated vowels to not have to do changes to the keyboard.
+
+## Original
 
 🔗 https://octokatherine.github.io/word-master/
 
